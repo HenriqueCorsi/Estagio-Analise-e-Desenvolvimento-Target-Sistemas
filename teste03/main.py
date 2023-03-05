@@ -26,7 +26,8 @@ def converte_dados():
 
 'Função que verifica o dia de menor faturamento'
 def menor_valor_faturado():
-    print(f'\nO MENOR valor faturado no mês foi de {min(converte_dados()):.2f}.')
+    menor_valor = min(converte_dados)
+    print(f'\nO MENOR valor faturado no mês foi de {menor_valor:.2f}.')
 
 
 'Função que verifica o dia de maior faturamento. OBS: PODERIA USAR A FUNÇÃO MAX(), MAIS OBTEI POR UTILIZAR  A LÓGICA'
