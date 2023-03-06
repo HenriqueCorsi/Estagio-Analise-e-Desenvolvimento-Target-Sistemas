@@ -18,7 +18,7 @@ def menor_valor_faturado():
     print(f'\nO MENOR valor faturado no mês foi de {menor_valor:.2f}.')
 
 
-#Função que verifica o dia de maior faturamento. OBS: PODERIA USAR A FUNÇÃO MAX(), MAIS OBTEI POR UTILIZAR  A LÓGICA
+#Função que verifica o dia de maior faturamento. OBS: PODERIA USAR A FUNÇÃO MAX(), MAIS OPTEI POR UTILIZAR  A LÓGICA
 def maior_valor_faturado():
     maior_valor = 0
     for x in converte_dados():
@@ -27,7 +27,7 @@ def maior_valor_faturado():
     print(f'\nO MAIOR valor faturado no mês foi de R${maior_valor:.2f}.')
 
 
-#Calcula a média mensal de faturamento do mês
+#Calcula a média mensal do faturamento do mês
 def calcula_media_mensal():
     lucro_mensal = 0
     for x in converte_dados():
@@ -43,6 +43,7 @@ def calcula_dias_superados():
             dias_superados += 1
     print(f'\nA quantidade de dias que o lucro diário superou a média mensal foi de {dias_superados} dias.')
 
+#Chamando as funções
 menor_valor_faturado()
 maior_valor_faturado()
 calcula_dias_superados()
